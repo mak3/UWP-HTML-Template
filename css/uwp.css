@@ -1,0 +1,276 @@
+body {
+    background-color: #e5e5e5;
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    width: calc(100% - 20px);
+    height: 48px;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+  @media only screen and (min-width: 40.063em) {
+.topbar {
+    padding-left: 68px;
+	width: calc(100% - 68px);
+}
+}
+
+.header {
+    font-size: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.ikonki {
+    font-family: 'Segoe MDL2 Assets';
+    font-size: 1.5pc;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ham{
+	width: 68px;
+}
+
+.ham::before {
+    content: '\e712';
+}
+
+
+@media only screen and (min-width: 40.063em) {
+	.ham{
+	width: 48px;
+}
+	
+.ham::before {
+    content: '\e700';
+}
+}
+
+
+
+.cmd::before {
+    content: '\E756';
+}
+
+.education::before {
+    content: '\E7BE ';
+}
+
+.food::before {
+    content: '\ed56';
+}
+
+.refresh::before {
+    content: '\e72c';
+}
+
+.settings::before {
+    content: '\e713';
+}
+
+.informacja::before {
+    content: '\e946';
+}
+
+
+.refresh {
+    cursor:pointer;
+}
+
+.pozycja {
+    white-space: nowrap;
+    color: white;
+    height: 48px;
+}
+
+.float {
+    float: left;
+}
+
+.flexright {
+    margin-left: auto;
+}
+
+    .flexright > .ikonki {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+        .flexright > .ikonki:hover {
+            background-color: #d9d9d9;
+        }
+
+.menutext {
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+
+.pozycja:hover {
+    background-color: #3c3c3c;
+}
+
+.content {
+    margin: 60px 12px 50px 12px;
+    /*transition-duration: 200ms; */
+}
+
+
+@media only screen and (min-width: 40.063em) {
+    .content {
+        margin: 68px 20px 20px 68px;
+    }
+}
+
+@media only screen and (min-width: 64.063em) {
+    .content {
+        margin: 68px 20px 20px 68px;
+    }
+}
+
+
+
+
+.bottom_aligner {
+    border-bottom: 1px solid #525252;
+    border-top: 1px solid #525252;
+    flex-grow: 1;
+}
+
+.of_none {
+    -ms-overflow-style: none;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+    .of_none > a {
+        text-decoration: none;
+    }
+
+	
+	/*
+Stołówka
+	*/
+
+.of_none2 {
+    -ms-overflow-style: none;
+    height: 100%;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    background-color: #272727;
+}
+
+        .of_none2 > a {
+            text-decoration: none;
+            }
+	
+	.of_none2 > a:hover {
+    background-color: #3c3c3c;
+}
+
+.ikonkidolne {
+    font-family: 'Segoe MDL2 Assets';
+    font-size: 1.5pc;
+    width: 48px;
+	padding-left:10px;
+	padding-right:10px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menutextdolne {
+    text-align:center;
+	font-size:12px;
+    width: 68px;
+}
+
+.bottom_aligner_dolne {
+    border-left: 1px solid #525252;
+    border-right: 1px solid #525252;
+    flex-grow: 1;
+}
+
+	.dolne {
+		
+		position: fixed;
+bottom: 0px;
+left: 0;
+z-index: 90;
+height: 68px;
+visibility: visible;
+background-color: #272727;
+transition-property: all;
+transition-duration: 200ms;
+transition-timing-function: ease-out;
+width: calc(100% - 68px);
+padding-right: 68px; 
+	}
+	
+	
+	
+	[data-effect='pure-effect-slide'] .dolne[data-position='left'] {
+  /* -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0); 
+  */
+  height:48px;
+  overflow:hidden;
+  
+}
+  @media only screen and (min-width: 40.063em) {
+    [data-effect='pure-effect-slide'] .dolne[data-position='left'] {
+      height:48px;
+	  display:none;} }
+  @media only screen and (min-width: 64.063em) {
+    [data-effect='pure-effect-slide'] .dolne[data-position='left'] {
+      display:none;
+	  height:48px;} }
+
+
+[data-effect='pure-effect-slide'] .pure-toggle[data-toggle='left']:checked ~ .dolne[data-position='left'] {
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); 
+  height:68px;
+  overflow:visible;}
+
+#loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    left: calc(50% - 76px);
+    top: calc(50% - 76px);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
