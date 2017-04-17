@@ -11,12 +11,12 @@ UWP HTML Template is simple and lightweight template that lets developers quickl
 <img src="http://i.imgur.com/FmvyMoc.png" />
 
 ### Intuitive navigation
-<img src="http://i.imgur.com/zPl6eZq.png" />
+<img src="http://i.imgur.com/zPl6eZq.png" /> <img src="http://i.imgur.com/La6vW7f.png" />
 
 ## Documentation
 Segoe UI Icons - https://docs.microsoft.com/en-us/windows/uwp/style/segoe-ui-symbol-font
 
-## Feedback / Bug report / feature request
+## Feedback / Bug report 
 https://github.com/mak3/UWP-HTML-Template/issues
 
 ## Contributions
